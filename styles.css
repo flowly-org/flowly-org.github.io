@@ -415,7 +415,7 @@ h1 {
 
 .plans {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   align-items: stretch;
 }
@@ -463,6 +463,10 @@ h1 {
   span { color: var(--muted); font-size: 0.9rem; }
   &:hover { border-color: var(--accent); transform: translateY(-2px); }
   &.soon { border-style: dashed; }
+}
+
+@media (max-width: 1160px) {
+  .plans { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 900px) {
