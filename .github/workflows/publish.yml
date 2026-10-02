@@ -18,6 +18,10 @@ jobs:
           mkdir -p _site
           cp -r index.html styles.css assets CNAME _site/
           touch _site/.nojekyll
+          # Cache-busting: the CDN keeps styles.css for hours; a new page must load its own stylesheet.
+          v=$(sha256sum styles.css | cut -c1-10)
+          sed -i "s|href=\"styles.css\"|href=\"styles.css?v=$v\"|" _site/index.html
+          grep -q "styles.css?v=$v" _site/index.html
       - name: Push to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
