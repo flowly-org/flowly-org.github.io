@@ -378,6 +378,93 @@ h1 {
   .muted { margin-left: auto; color: var(--muted); }
 }
 
+.small { font-size: 0.88rem; }
+.muted { color: var(--muted); }
+.center { text-align: center; }
+
+.duo {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-top: 56px;
+}
+
+.phones {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+
+  .phone {
+    width: min(260px, 45%);
+    border-radius: 28px;
+    overflow: hidden;
+  }
+  .tilt {
+    transform: rotate(3deg) translateY(28px);
+  }
+}
+
+.chat.group .who {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 28px 26px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+
+  h3 { margin: 0; font-size: 1.15rem; }
+  .price { margin: 6px 0 0; font-size: 2.4rem; font-weight: 800; letter-spacing: -0.02em; }
+  .price span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+  p.small { margin: 0 0 6px; }
+  .checks { margin: 12px 0 22px; flex: 1; }
+  .btn { align-self: flex-start; }
+
+  &.featured {
+    border: 2px solid var(--accent);
+    box-shadow: var(--shadow);
+  }
+}
+
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.dl {
+  display: grid;
+  gap: 2px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+
+  span { color: var(--muted); font-size: 0.9rem; }
+  &:hover { border-color: var(--accent); transform: translateY(-2px); }
+  &.soon { border-style: dashed; }
+}
+
 @media (max-width: 900px) {
   .nav nav { display: none; }
 
@@ -387,6 +474,9 @@ h1 {
   .split { grid-template-columns: 1fr; }
 
   .split .phone { max-width: 280px; margin: 0 auto; }
+  .duo { grid-template-columns: 1fr; }
+  .plans { grid-template-columns: 1fr; }
+  .phones .tilt { transform: rotate(3deg) translateY(16px); }
 
   .hero { padding-top: 56px; }
 
