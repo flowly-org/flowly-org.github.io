@@ -498,3 +498,17 @@ h1 {
 
   .btn { transition: none; }
 }
+
+kbd {
+  font: 600 0.8em ui-monospace, SFMono-Regular, Menlo, monospace;
+  padding: 1px 5px;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: var(--surface);
+}
+
+h3.sub {
+  margin: 48px 0 6px;
+  font-size: 1.3rem;
+}

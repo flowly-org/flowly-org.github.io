@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Flowly · Your day, across every project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Flowly turns the tasks from all your projects and teams into one board for today. Phone app with swipe review and photo lists, calendar awareness, an AI concierge on Telegram, team bots for Telegram and Slack, time tracking and e-invoices.">
+  <meta name="description" content="Flowly turns the tasks from all your projects and teams into one board for today, then helps you plan your time: time blocking around your meetings, recurring tasks and reminders, a weekly review, sprints and a timeline for teams. Phone and desktop apps, an AI concierge on Telegram, an ADHD mode, time tracking and e-invoices.">
   <meta name="theme-color" content="#4f46e5">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="canonical" href="https://flowly.net/">
@@ -21,6 +21,8 @@
       <a class="brand" href="#top" aria-label="Flowly home"><img src="assets/logo.svg" alt="" width="30" height="30"> Flowly</a>
       <nav aria-label="Sections">
         <a href="#features">Features</a>
+        <a href="#planning">Planning</a>
+        <a href="#focus">Focus</a>
         <a href="#mobile">On your phone</a>
         <a href="#teams">Teams</a>
         <a href="#time">Time &amp; invoices</a>
@@ -75,12 +77,12 @@
           <article class="card">
             <div class="icon" aria-hidden="true">📷</div>
             <h3>Write it down, snap it, done</h3>
-            <p>Photograph a handwritten list and AI turns it into tasks: crossed-out items done, notes kept, “fri” becomes Friday. Or paste a list with <code>!high</code>, <code>#tag</code>, <code>+Project</code>, <code>@tomorrow</code>.</p>
+            <p>Photograph a handwritten list, paste your meeting notes, or send Flo a voice message: AI turns it into tasks, with who does what and by when. Or paste a list with <code>!high</code>, <code>+Project</code>, <code>@tomorrow</code>, <code>~30m</code>, <code>=Anna</code>.</p>
           </article>
           <article class="card">
             <div class="icon" aria-hidden="true">📅</div>
             <h3>Your calendar, as background</h3>
-            <p>Google Calendar events sit above the board without becoming tasks. Flowly flags the few that need preparation (tickets, travel, a trip away from home) so nothing sneaks up on you.</p>
+            <p>Google, Outlook / Microsoft 365, CalDAV (Nextcloud, iCloud…) or any iCal link: events sit above the board without becoming tasks, and the few that need preparation are flagged. Your tasks go back into your calendar app as a private feed.</p>
           </article>
           <article class="card">
             <div class="icon" aria-hidden="true">✓</div>
@@ -92,11 +94,71 @@
             <h3>Discuss, attach, share</h3>
             <p>Every task has a thread and its documents (uploads, links, Google Drive, OneDrive / SharePoint) and its own link: private, team, shared with people, or public read-only.</p>
           </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">↻</div>
+            <h3>Repeat, check off, remind</h3>
+            <p>Recurring tasks (every weekday, every 2 weeks, monthly…), checklists inside a task, reminders at a time on your phone, desktop or Telegram, and estimates that show when a day is overbooked.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">⌘</div>
+            <h3>Templates and search</h3>
+            <p>Save a set of tasks once (“client onboarding”, “monthly close”) and create them all with dates from a start day. Find anything (tasks, comments, wiki pages) with <kbd>Ctrl</kbd>+<kbd>K</kbd>.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">⇪</div>
+            <h3>Bring your history</h3>
+            <p>Import Trello boards and Asana projects with their lists, labels, checklists, due dates and comments, or sync chores both ways with your self-hosted Donetick.</p>
+          </article>
         </div>
         <div class="duo">
           <figure class="shot"><img src="assets/calendar.webp" width="1400" height="611" loading="lazy" alt="My day with today's calendar events above the board; a concert next week is flagged as needing tickets, with a one-click 'Buy tickets' task."></figure>
           <figure class="shot"><img src="assets/photo-import.webp" width="1200" height="792" loading="lazy" alt="Bulk add after reading a photo of a handwritten list: buy milk, call the plumber (done), slides for Friday's meeting with a note, book train to Milan."></figure>
         </div>
+      </div>
+    </section>
+
+    <section id="planning" class="section alt">
+      <div class="wrap">
+        <h2>Plan your time, not just your tasks</h2>
+        <p class="section-lede">A list says what. Flowly also helps with when, how much, and how it went.</p>
+        <figure class="shot"><img src="assets/plan.webp" width="1400" height="614" loading="lazy" alt="Plan the day: a timeline from 9 to 18 with the day's meetings in grey and colored time blocks for tasks fitted around them, and the tasks still to place."></figure>
+        <div class="grid three">
+          <article class="card">
+            <h3>Time blocking</h3>
+            <p>Drag tasks onto the day, or let <strong>Auto-plan</strong> fit them around your meetings using their estimates. Blocks remind you when they start and show up in your calendar app.</p>
+          </article>
+          <article class="card">
+            <h3>Weekly review</h3>
+            <p>Every Friday: what got done, where the time went, what keeps slipping, how your estimates hold up, and Flo's three priorities for next week. Fix what's left in one click.</p>
+          </article>
+          <article class="card">
+            <h3>Insights</h3>
+            <p>For you, a project or a whole workspace: throughput per week, time by project, on-time rate, time to done, estimates vs. real time, and who has what open.</p>
+          </article>
+        </div>
+        <div class="duo">
+          <figure class="shot"><img src="assets/review.webp" width="876" height="710" loading="lazy" alt="The weekly review: tasks done, time tracked, planned tasks done, Flo's written review with next week's priorities, and where the time went by project."></figure>
+          <figure class="shot"><img src="assets/insights.webp" width="876" height="690" loading="lazy" alt="Insights for a workspace: tasks done and created, time tracked, open and overdue tasks, on-time rate and time to done, with charts per week and per project."></figure>
+        </div>
+        <h3 class="sub">Timeline &amp; dependencies</h3>
+        <p class="small muted">Tasks as bars from planned day to due date, with arrows for what waits for what; drag a bar to reschedule. Blocked tasks stay out of your way until they're unblocked, and you're told when they are.</p>
+        <figure class="shot"><img src="assets/timeline.webp" width="1608" height="511" loading="lazy" alt="The timeline: tasks as bars from planned day to due date, grouped by project, with arrows between tasks that wait for each other and a milestone for the launch."></figure>
+      </div>
+    </section>
+
+    <section id="focus" class="section">
+      <div class="wrap two-col">
+        <div>
+          <h2>Made for focus, with an ADHD mode</h2>
+          <p class="section-lede">Opt in, and Flowly shows one thing at a time.</p>
+          <ul class="checks">
+            <li><strong>A “Now” card</strong> with the single next task: focus for 25 minutes, done, not now, or let Flo break it into tiny steps.</li>
+            <li><strong>Today's 3</strong> on your phone; the rest waits, folded away.</li>
+            <li><strong>Gentle nudges:</strong> a check-in while the timer runs, a break after long stretches, a heads-up before meetings.</li>
+            <li><strong>Flo adapts:</strong> shorter, concrete, no guilt about yesterday, and a small celebration when something gets done.</li>
+          </ul>
+        </div>
+        <figure class="shot"><img src="assets/focus.webp" width="1100" height="440" loading="lazy" alt="ADHD mode: a Now card with the next task, buttons to focus for 25 minutes, mark done, break it down or postpone, and the next two tasks."></figure>
       </div>
     </section>
 
@@ -127,7 +189,9 @@
           <p class="section-lede">Bring your assistant to your tasks, or let Flowly's come to you.</p>
           <ul class="checks">
             <li><strong>The concierge</strong> (Pro) on Telegram and in the app: a morning brief that also checks your calendar (“the concert is Thursday: tickets?”), urgent alerts, and tasks added, moved or timed by chat.</li>
-            <li><strong>Send it a photo</strong> of a list and the tasks are there, in the workspace you name in the caption.</li>
+            <li><strong>Send it a photo or a voice message</strong>: a written list, a dictated to-do, or “move the proposal to Friday”. It also plans your day into time blocks and writes your weekly review.</li>
+            <li><strong>Meeting notes and emails</strong> become action items, assigned to the right people with their dates.</li>
+            <li><strong>Your team's wiki</strong> (a GitHub wiki, a docs folder or a MediaWiki) is knowledge Flo and the agent use for answers and delegated work.</li>
             <li><strong>Delegate to Flo</strong> (Pro Plus): hand over research, drafts and plans. Flo checks what it can do, works on it and reports on the task, sources included. It never sends, books or buys anything.</li>
             <li><strong>ChatGPT, Claude and any MCP client.</strong> Connect Flowly as a connector and ask “what's left today?”, add tasks, log time or search past work, with your permissions.</li>
             <li><strong>Workspace-level MCP</strong> for organization flows and automations, with service tokens that act as a bot member.</li>
@@ -154,10 +218,21 @@
           <ul class="checks">
             <li><strong>Telegram groups and Slack</strong> (Enterprise). The team's plan every morning, live updates, questions answered in the chat, whiteboard photos turned into tasks.</li>
             <li><strong>Safe in a group.</strong> Private tasks never appear; people who aren't in the workspace can only read; everyone else acts as themselves.</li>
+            <li><strong>Agile rituals, if you want them.</strong> Sprints with planning, capacity and a burndown, an async daily standup (drafted from each person's tasks, answered by just replying to Flo) and a retrospective board whose items become next sprint's actions. Opt in per workspace or per project.</li>
+            <li><strong>Dependencies and a timeline</strong> for plans that span weeks.</li>
             <li><strong>Roles &amp; invitations.</strong> Owners, admins and members. Invite by email or share a join link.</li>
             <li><strong>Notifications</strong> for assignments, urgent tasks and comments: in the app, on your desktop and on Telegram.</li>
             <li><strong>Your colours.</strong> Each workspace tints Flowly while you're in it. Light, dark or follow the system, in six languages.</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="duo">
+          <figure class="shot"><img src="assets/sprint.webp" width="876" height="650" loading="lazy" alt="A sprint: the goal, progress against the team's capacity, and the burndown of remaining estimated work against the ideal pace."></figure>
+          <figure class="shot"><img src="assets/standup.webp" width="876" height="420" loading="lazy" alt="The async standup: my update drafted from my tasks, and the team's updates today with a blocker flagged."></figure>
         </div>
       </div>
     </section>
@@ -168,12 +243,15 @@
         <p class="section-lede">Connect a whole workspace or just one project.</p>
         <ul class="pills" aria-label="Integrations">
           <li><strong>GitHub</strong> Issues become tasks; closing either side closes the other; comments sync both ways.</li>
-          <li><strong>Google Calendar</strong> Several accounts, read-only; events as background, preparation flagged.</li>
-          <li><strong>Email in</strong> Forward to <code>team@in.flowly.net</code>-style aliases and it becomes a task.</li>
+          <li><strong>Calendars</strong> Google, Outlook / Microsoft 365, CalDAV and iCal links, several accounts; your tasks back as an iCal feed.</li>
+          <li><strong>Email in</strong> Forward to <code>team@in.flowly.net</code>-style aliases: a task, or AI turns a long email into its action items.</li>
           <li><strong>Slack</strong> Updates in a channel, or the full Slack app with @Flowly and <code>/flowly</code>.</li>
           <li><strong>Telegram</strong> Your personal concierge, and the team bot in your group.</li>
           <li><strong>Webhooks</strong> Signed outgoing events and an incoming URL that creates or updates tasks.</li>
           <li><strong>Google Drive &amp; OneDrive</strong> Attach documents straight from your drives.</li>
+          <li><strong>Wikis</strong> A GitHub wiki, a docs folder or a MediaWiki as team knowledge for Flo.</li>
+          <li><strong>Donetick</strong> Two-way sync with your self-hosted chores app, by workspace, project or label.</li>
+          <li><strong>Trello &amp; Asana</strong> Import boards and projects with lists, checklists and comments.</li>
           <li><strong>Your own AI</strong> (Enterprise) An OpenRouter key or an on-premises OpenAI-compatible model, with data kept exclusive to it.</li>
         </ul>
       </div>
@@ -205,8 +283,11 @@
             <ul class="checks">
               <li>Unlimited workspaces, projects and tasks</li>
               <li>My day, swimlanes, phone and desktop apps</li>
+              <li>Recurring tasks, checklists, reminders, templates, search</li>
+              <li>Time blocking, timeline, insights, weekly numbers</li>
+              <li>Sprints, standups and retros for teams</li>
               <li>Time tracking and reports</li>
-              <li>GitHub, Google Calendar, email in, Slack updates, webhooks</li>
+              <li>GitHub, calendars, email in, wikis, Donetick, imports, webhooks</li>
               <li>Claude, ChatGPT and MCP connectors</li>
             </ul>
             <a class="btn ghost" href="https://app.flowly.net/register">Start for free</a>
@@ -218,8 +299,8 @@
             <ul class="checks">
               <li>Everything in Free</li>
               <li>Personal concierge on Telegram and in the app</li>
-              <li>Morning brief with calendar checks</li>
-              <li>Photo lists turned into tasks</li>
+              <li>Morning brief and weekly review written by Flo</li>
+              <li>Photos, voice messages, meeting notes and emails turned into tasks</li>
               <li>Invoices, e-invoices (IT, DE, FR) and pay links</li>
             </ul>
             <a class="btn primary" href="https://app.flowly.net/register">Try Flowly, upgrade in Settings</a>
