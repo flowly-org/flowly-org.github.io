@@ -512,3 +512,7 @@ h3.sub {
   margin: 48px 0 6px;
   font-size: 1.3rem;
 }
+
+.grow-up { margin-top: 32px; align-items: center; }
+.grow-up h3.sub { margin-top: 0; }
+.icon svg { display: block; }
