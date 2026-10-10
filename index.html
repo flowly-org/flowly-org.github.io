@@ -9,7 +9,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="canonical" href="https://flowly.net/">
   <meta property="og:title" content="Flowly · Your day, across every project">
-  <meta property="og:description" content="One board for today across every project and team. On your phone, in your calendar, in your team chat, and on your invoices.">
+  <meta property="og:description" content="Open-source daily planner: one board for today across every project and team. On your phone, in your calendar, in your team chat, and on your invoices.">
   <meta property="og:image" content="https://flowly.net/assets/og.png">
   <meta property="og:url" content="https://flowly.net/">
   <meta name="twitter:card" content="summary_large_image">
@@ -26,10 +26,12 @@
         <a href="#mobile">On your phone</a>
         <a href="#teams">Teams</a>
         <a href="#time">Time &amp; invoices</a>
+        <a href="#open-source">Open source</a>
         <a href="#pricing">Pricing</a>
         <a href="#apps">Apps</a>
       </nav>
       <div class="nav-cta">
+        <a class="link" href="https://github.com/flowly-org">GitHub</a>
         <a class="link" href="https://app.flowly.net/login">Sign in</a>
         <a class="btn primary" href="https://app.flowly.net/register">Get started</a>
       </div>
@@ -39,7 +41,7 @@
   <main id="top">
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow">Daily planning for people with too many projects</p>
+        <p class="eyebrow">Open-source daily planning for people with too many projects</p>
         <h1>Your day, <span class="accent">across every project.</span></h1>
         <p class="lede">
           Flowly gathers the tasks from all your projects and teams into one board for today, grouped into
@@ -48,7 +50,7 @@
         </p>
         <div class="cta">
           <a class="btn primary big" href="https://app.flowly.net/register">Start for free</a>
-          <a class="btn ghost big" href="#apps">Get the apps</a>
+          <a class="btn ghost big" href="#open-source">Host it yourself</a>
         </div>
         <figure class="shot hero-shot">
           <picture>
@@ -285,10 +287,60 @@
       </div>
     </section>
 
+    <section id="open-source" class="section">
+      <div class="wrap">
+        <h2>Open source. Host it yourself, or let us.</h2>
+        <p class="section-lede">Every line of Flowly is public under the AGPL-3.0: the server, the web app, the phone and desktop apps,
+          and even the prompt that describes how to build it. Run it on your own server with every feature included, or use
+          flowly.net and let us run it.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5 M9 8V2 M15 8V2 M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg></div>
+            <h3>Self-host in five minutes</h3>
+            <p>Docker images for the API and the web app, Postgres, one <code>.env</code>. Every feature is unlocked: no plans,
+              no limits, no phoning home.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M12 18h.01"/></svg></div>
+            <h3>Apps for any server</h3>
+            <p>The Android and desktop apps connect to flowly.net, to your company's server, or to several at once, each with
+              its own sign-in. Switch from the menu.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z M19 3v4 M17 5h4 M5 17v4 M3 19h4"/></svg></div>
+            <h3>Your AI, your choice</h3>
+            <p>Flo works with an OpenRouter key or any OpenAI-compatible endpoint, including a model on your own hardware.
+              Or leave AI off: the planner works fine without it.</p>
+          </article>
+        </div>
+        <div class="two-col oss">
+          <div>
+            <h3 class="sub">Run it</h3>
+            <pre class="terminal"><code>curl -O https://raw.githubusercontent.com/flowly-org/flowly-backend/main/selfhost/docker-compose.yml
+curl -o .env https://raw.githubusercontent.com/flowly-org/flowly-backend/main/selfhost/.env.example
+# set DJANGO_SECRET_KEY, POSTGRES_PASSWORD and PUBLIC_URL
+docker compose up -d</code></pre>
+            <p class="small muted">Then open <code>http://localhost:8080</code>. The <a href="https://github.com/flowly-org/flowly-backend#self-hosting">self-hosting guide</a> covers HTTPS, admin settings, calendars, Telegram and SSO.</p>
+          </div>
+          <div>
+            <h3 class="sub">The code</h3>
+            <ul class="repos">
+              <li><a href="https://github.com/flowly-org/flowly-backend"><strong>flowly-backend</strong></a> API, worker and self-hosting files (Django)</li>
+              <li><a href="https://github.com/flowly-org/flowly-frontend"><strong>flowly-frontend</strong></a> Web app, Android and iOS (Angular, Capacitor)</li>
+              <li><a href="https://github.com/flowly-org/flowly-desktop"><strong>flowly-desktop</strong></a> Tray time tracker for macOS, Windows, Linux (Tauri)</li>
+              <li><a href="https://github.com/flowly-org/flowly-prompt"><strong>flowly-prompt</strong></a> PROMPT.md: the specification that rebuilds Flowly with a coding agent</li>
+            </ul>
+            <p class="small muted">Issues and pull requests welcome. Licensed under the GNU AGPL-3.0.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="pricing" class="section">
       <div class="wrap">
-        <h2>Pricing</h2>
-        <p class="section-lede">Start free. Upgrade when the AI and the invoices start paying for themselves.</p>
+        <h2>Hosted on flowly.net</h2>
+        <p class="section-lede">Don't want to run a server? Use ours. Start free, upgrade when the AI and the invoices start paying
+          for themselves. Self-hosting stays free, with everything included.</p>
         <div class="plans">
           <article class="plan">
             <h3>Free</h3>
@@ -351,7 +403,7 @@
     <section id="apps" class="section alt">
       <div class="wrap">
         <h2>Get the apps</h2>
-        <p class="section-lede">The web app works everywhere. These add a timer in your tray and your day on your phone.</p>
+        <p class="section-lede">The web app works everywhere. These add a timer in your tray and your day on your phone, on flowly.net or your own server.</p>
         <div class="downloads">
           <a class="dl" href="https://github.com/flowly-org/flowly-releases/releases/latest/download/Flowly-Android.apk"><strong>Android</strong><span>APK</span></a>
           <a class="dl" href="https://github.com/flowly-org/flowly-releases/releases/latest/download/Flowly-macOS-universal.dmg"><strong>macOS</strong><span>Apple silicon &amp; Intel</span></a>
@@ -380,8 +432,9 @@
         <a href="https://app.flowly.net/register">Create account</a>
         <a href="https://app.flowly.net/apps">Apps</a>
         <a href="https://github.com/flowly-org">GitHub</a>
+        <a href="https://github.com/flowly-org/flowly-prompt">The prompt</a>
       </nav>
-      <span class="muted">© 2026 Flowly</span>
+      <span class="muted">Open source · AGPL-3.0</span>
     </div>
   </footer>
 </body>
