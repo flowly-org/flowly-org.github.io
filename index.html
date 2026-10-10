@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flowly · Your day, across every project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Flowly turns the tasks from all your projects and teams into one board for today, then helps you plan your time: time blocking around your meetings, recurring tasks and reminders, a weekly review, sprints and a timeline for teams. Phone and desktop apps, an AI concierge on Telegram, an ADHD mode, time tracking and e-invoices.">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="canonical" href="https://flowly.net/">
+  <meta property="og:title" content="Flowly · Your day, across every project">
+  <meta property="og:description" content="Open-source daily planner: one board for today across every project and team. On your phone, in your calendar, in your team chat, and on your invoices.">
+  <meta property="og:image" content="https://flowly.net/assets/og.png">
+  <meta property="og:url" content="https://flowly.net/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css?v=24f0ff8f9b">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Flowly home"><img src="assets/logo.svg" alt="" width="30" height="30"> Flowly</a>
+      <nav aria-label="Sections">
+        <a href="#features">Features</a>
+        <a href="#planning">Planning</a>
+        <a href="#teams">Teams</a>
+        <a href="#open-source">Open source</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="link icon-link" href="https://github.com/flowly-org" aria-label="Flowly on GitHub" title="Flowly on GitHub"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+        <a class="link" href="https://app.flowly.net/login">Sign in</a>
+        <a class="btn primary" href="https://app.flowly.net/register">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Open-source daily planning for people with too many projects</p>
+        <h1>Your day, <span class="accent">across every project.</span></h1>
+        <p class="lede">
+          Flowly gathers the tasks from all your projects and teams into one board for today, grouped into
+          swimlanes by project, context or anything you tag. On your desk, on your phone, in your team chat.
+          Tomorrow starts clean.
+        </p>
+        <div class="cta">
+          <a class="btn primary big" href="https://app.flowly.net/register">Start for free</a>
+          <a class="btn ghost big" href="#open-source">Host it yourself</a>
+        </div>
+        <figure class="shot hero-shot">
+          <picture>
+            <source srcset="assets/lanes-dark.webp" media="(prefers-color-scheme: dark)">
+            <img src="assets/myday.webp" width="1600" height="955" alt="Flowly's My day board: today's calendar with leave-by times above tasks from two workspaces in swimlanes by project, with To do, In progress, Review and Done columns and a backlog on the side.">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="wrap">
+        <h2>Plan the day the way you actually work</h2>
+        <p class="section-lede">Not another list per project. One view of what matters today, from everywhere.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z M8 7v7 M12 7v4 M16 7v9"/></svg></div>
+            <h3>Swimlanes by anything</h3>
+            <p>Group today's tasks by project, workspace, person, priority or your own tags, like <em>@calls</em> or <em>@deep work</em>. Drag a card to another lane and it moves there for real.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9l-.8-1.2A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></div>
+            <h3>All your workspaces, one day</h3>
+            <p>Work, side projects and home in separate workspaces, each with its own colour, people and rules. <strong>My day</strong> brings everything assigned to you together.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z M12 10a3 3 0 1 0 0 6a3 3 0 1 0 0-6Z"/></svg></div>
+            <h3>Write it down, snap it, done</h3>
+            <p>Photograph a handwritten list, paste your meeting notes, or send Flo a voice message: AI turns it into tasks, with who does what and by when. Or paste a list with <code>!high</code>, <code>+Project</code>, <code>@tomorrow</code>, <code>~30m</code>, <code>=Anna</code>.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4 M16 2v4 M3 10h18 M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></svg></div>
+            <h3>Your calendar, as background</h3>
+            <p>Google, Outlook / Microsoft 365, CalDAV (Nextcloud, iCloud…) or any iCal link: events sit above the board without becoming tasks, the few that need preparation are flagged, and appointments in town come with the time to get there. Your tasks go back into your calendar app as a private feed.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4Z M7.5 7.5h.01"/></svg></div>
+            <h3>Your statuses, your priorities</h3>
+            <p>Columns and priorities are tags you define: add <em>Review</em> or <em>Waiting</em>, reorder them, choose what counts as done. Unfinished work carries over.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
+            <h3>Discuss, attach, share</h3>
+            <p>Every task has a thread and its documents (uploads, links, Google Drive, OneDrive / SharePoint) and its own link: private, team, shared with people, or public read-only.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9a9.8 9.8 0 0 0-6.7 2.7L3 8 M3 3v5h5 M12 7v5l4 2"/></svg></div>
+            <h3>Repeat, check off, remind</h3>
+            <p>Recurring tasks (every weekday, every 2 weeks, monthly…), checklists inside a task, reminders at a time on your phone, desktop or Telegram, and estimates that show when a day is overbooked.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4a7 7 0 1 0 0 14a7 7 0 1 0 0-14Z M21 21l-4.3-4.3"/></svg></div>
+            <h3>Templates and search</h3>
+            <p>Save a set of tasks once (“client onboarding”, “monthly close”) and create them all with dates from a start day. Find anything (tasks, comments, wiki pages) with <kbd>Ctrl</kbd>+<kbd>K</kbd>.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7L7 17 M17 17H7V7"/></svg></div>
+            <h3>Bring your history</h3>
+            <p>Import Trello boards and Asana projects with their lists, labels, checklists, due dates and comments, or sync chores both ways with your self-hosted Donetick.</p>
+          </article>
+        </div>
+        <div class="duo">
+          <figure class="shot"><img src="assets/calendar.webp" width="1400" height="611" loading="lazy" alt="My day with today's calendar events above the board; a concert next week is flagged as needing tickets, with a one-click 'Buy tickets' task."></figure>
+          <figure class="shot"><img src="assets/photo-import.webp" width="1200" height="792" loading="lazy" alt="Bulk add after reading a photo of a handwritten list: buy milk, call the plumber (done), slides for Friday's meeting with a note, book train to Milan."></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="planning" class="section alt">
+      <div class="wrap">
+        <h2>Plan your time, not just your tasks</h2>
+        <p class="section-lede">A list says what. Flowly also helps with when, how much, and how it went.</p>
+        <figure class="shot"><img src="assets/plan.webp" width="1400" height="614" loading="lazy" alt="Plan the day: a timeline from 9 to 18 with the day's meetings in grey and colored time blocks for tasks fitted around them, and the tasks still to place."></figure>
+        <div class="grid three">
+          <article class="card">
+            <h3>Time blocking</h3>
+            <p>Drag tasks onto the day, or let <strong>Auto-plan</strong> fit them around your meetings using their estimates. Blocks remind you when they start and show up in your calendar app.</p>
+          </article>
+          <article class="card">
+            <h3>Weekly review</h3>
+            <p>Every Friday: what got done, where the time went, what keeps slipping, how your estimates hold up, and Flo's three priorities for next week. Fix what's left in one click.</p>
+          </article>
+          <article class="card">
+            <h3>Insights</h3>
+            <p>For you, a project or a whole workspace: throughput per week, time by project, on-time rate, time to done, estimates vs. real time, and who has what open.</p>
+          </article>
+        </div>
+        <div class="duo">
+          <figure class="shot"><img src="assets/review.webp" width="876" height="710" loading="lazy" alt="The weekly review: tasks done, time tracked, planned tasks done, Flo's written review with next week's priorities, and where the time went by project."></figure>
+          <figure class="shot"><img src="assets/insights.webp" width="876" height="690" loading="lazy" alt="Insights for a workspace: tasks done and created, time tracked, open and overdue tasks, on-time rate and time to done, with charts per week and per project."></figure>
+        </div>
+        <h3 class="sub">Timeline &amp; dependencies</h3>
+        <p class="small muted">Tasks as bars from planned day to due date, with arrows for what waits for what; drag a bar to reschedule. Blocked tasks stay out of your way until they're unblocked, and you're told when they are.</p>
+        <figure class="shot"><img src="assets/timeline.webp" width="1608" height="511" loading="lazy" alt="The timeline: tasks as bars from planned day to due date, grouped by project, with arrows between tasks that wait for each other and a milestone for the launch."></figure>
+        <h3 class="sub">Get there on time</h3>
+        <p class="small muted">Set your home town once. An appointment at an address in town takes 45 minutes to reach (your choice), one out of town at least twice that: the trip counts as busy time when Flowly plans your day, and every event shows when to leave, with a map link. Online calls and all-day events need no travel.</p>
+        <figure class="shot"><img src="assets/travel.webp" width="2140" height="876" loading="lazy" alt="My day with today's events above the board, each in-person one showing a leave-by time; the open ACME homepage review says: leave by 14:15, about 45 minutes to get there, with a map link and its two linked tasks."></figure>
+      </div>
+    </section>
+
+    <section id="focus" class="section">
+      <div class="wrap two-col">
+        <div>
+          <h2>Made for focus, with an ADHD mode</h2>
+          <p class="section-lede">Opt in, and Flowly shows one thing at a time.</p>
+          <ul class="checks">
+            <li><strong>A “Now” card</strong> with the single next task: focus for 25 minutes, done, not now, or let Flo break it into tiny steps.</li>
+            <li><strong>Today's 3</strong> on your phone; the rest waits, folded away.</li>
+            <li><strong>Gentle nudges:</strong> a check-in while the timer runs, a break after long stretches, a heads-up before meetings.</li>
+            <li><strong>Flo adapts:</strong> shorter, concrete, no guilt about yesterday, and a small celebration when something gets done.</li>
+          </ul>
+        </div>
+        <figure class="shot"><img src="assets/focus.webp" width="1100" height="440" loading="lazy" alt="ADHD mode: a Now card with the next task, buttons to focus for 25 minutes, mark done, break it down or postpone, and the next two tasks."></figure>
+      </div>
+    </section>
+
+    <section id="mobile" class="section alt">
+      <div class="wrap two-col">
+        <div>
+          <h2>Your day in your pocket</h2>
+          <p class="section-lede">On the phone, Flowly keeps only what you need on the go.</p>
+          <ul class="checks">
+            <li><strong>Today, at a glance.</strong> Your tasks from every workspace, with what's carried over and what's urgent.</li>
+            <li><strong>One tap to track.</strong> A big ▶ on every task starts the timer; the bar at the top stops it.</li>
+            <li><strong>Swipe to review.</strong> Right is done, left stays to do. Clear the day in thirty seconds, with undo.</li>
+            <li><strong>Photo of a list.</strong> Snap the to-do list on your desk and add it in one go.</li>
+          </ul>
+          <p class="small muted">The same simple view, swipe review included, is one click away on the desktop too. Android app and desktop tray timer available now; on iPhone, add Flowly to your home screen while the App Store version is on its way.</p>
+        </div>
+        <div class="phones">
+          <figure class="shot phone"><img src="assets/phone-compact.webp" width="700" height="1461" loading="lazy" alt="Flowly's compact phone view: today's tasks with a play button each, a running timer bar, and buttons for a photo of a list and adding tasks."></figure>
+          <figure class="shot phone tilt"><img src="assets/phone-swipe.webp" width="700" height="1461" loading="lazy" alt="Swipe review on a phone: a task card dragged to the right with a green DONE stamp."></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section">
+      <div class="wrap two-col">
+        <div>
+          <h2>AI that knows your day</h2>
+          <p class="section-lede">Bring your assistant to your tasks, or let Flowly's come to you.</p>
+          <ul class="checks">
+            <li><strong>The concierge</strong> (Pro) on Telegram and in the app: a morning brief that also checks your calendar (“the concert is Thursday: tickets?”), urgent alerts, and tasks added, moved or timed by chat.</li>
+            <li><strong>Send it a photo or a voice message</strong>: a written list, a dictated to-do, or “move the proposal to Friday”. It also plans your day into time blocks and writes your weekly review.</li>
+            <li><strong>Before every appointment</strong> (opt-in), Flo sends what you need on Telegram: when to leave, the address with a map, the notes and which linked tasks are still open.</li>
+            <li><strong>Meeting notes and emails</strong> become action items, assigned to the right people with their dates.</li>
+            <li><strong>Your team's wiki</strong> (a GitHub wiki, a docs folder or a MediaWiki) is knowledge Flo and the agent use for answers and delegated work.</li>
+            <li><strong>Delegate to Flo</strong> (Pro Plus): hand over research, drafts and plans. Flo checks what it can do, works on it and reports on the task, sources included. It never sends, books or buys anything.</li>
+            <li><strong>ChatGPT, Claude and any MCP client.</strong> Connect Flowly as a connector and ask “what's left today?”, add tasks, log time or search past work, with your permissions.</li>
+            <li><strong>Workspace-level MCP</strong> for organization flows and automations, with service tokens that act as a bot member.</li>
+          </ul>
+        </div>
+        <div class="chat" aria-label="Example concierge conversation">
+          <div class="bubble">Good morning, Sara! Studio Nord first: the <strong>ACME weekly sync</strong> (high), then the hero copy. The Coldplay concert is next Thursday and nothing covers it yet: shall I add “buy tickets”?</div>
+          <div class="bubble me">Yes, for today. And start the timer on the hero copy.</div>
+          <div class="bubble">Done: “Buy tickets: Coldplay concert” is on today, linked to the event, and the timer is running on “Hero section copy &amp; visuals”.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teams" class="section alt">
+      <div class="wrap two-col reverse">
+        <div class="chat group" aria-label="Example of the Flowly bot in a team group chat">
+          <div class="bubble me"><span class="who">Marta</span>/today</div>
+          <div class="bubble"><strong>☀ Studio Nord · Fri 2 Oct</strong><br>Marta (3): 🔴 Fix checkout on Safari · ACME website …<br>Luca (2): Review onboarding screens · Mobile app …<br>✅ 4 done so far today</div>
+          <div class="bubble me"><span class="who">Luca</span>📷 <em>photo of the whiteboard</em> · /tasks</div>
+          <div class="bubble">📋 Added 5 tasks to Studio Nord. /undo removes them.</div>
+        </div>
+        <div>
+          <h2>Built for teams, comfortable alone</h2>
+          <ul class="checks">
+            <li><strong>Telegram groups and Slack</strong> (Enterprise). The team's plan every morning, live updates, questions answered in the chat, whiteboard photos turned into tasks.</li>
+            <li><strong>Safe in a group.</strong> Private tasks never appear; people who aren't in the workspace can only read; everyone else acts as themselves.</li>
+            <li><strong>Agile rituals, if you want them.</strong> Sprints with planning, capacity and a burndown, an async daily standup (drafted from each person's tasks, answered by just replying to Flo) and a retrospective board whose items become next sprint's actions. Opt in per workspace or per project.</li>
+            <li><strong>Dependencies and a timeline</strong> for plans that span weeks.</li>
+            <li><strong>Projects that grow up.</strong> Move a project to another workspace, or promote it to a workspace of its own, with its tasks, time, integrations and the people involved. You see exactly what happens before you confirm.</li>
+            <li><strong>Roles &amp; invitations.</strong> Owners, admins and members. Invite by email or share a join link.</li>
+            <li><strong>Notifications</strong> for assignments, urgent tasks and comments: in the app, on your desktop and on Telegram.</li>
+            <li><strong>Your colours.</strong> Each workspace tints Flowly while you're in it. Light, dark or follow the system, in six languages.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="duo">
+          <figure class="shot"><img src="assets/sprint.webp" width="876" height="650" loading="lazy" alt="A sprint: the goal, progress against the team's capacity, and the burndown of remaining estimated work against the ideal pace."></figure>
+          <figure class="shot"><img src="assets/standup.webp" width="876" height="420" loading="lazy" alt="The async standup: my update drafted from my tasks, and the team's updates today with a blocker flagged."></figure>
+        </div>
+        <div class="two-col grow-up">
+          <div>
+            <h3 class="sub">A project that becomes a company</h3>
+            <p class="small muted">The side project took off, or a client needs its own space? Promote the project to a workspace: its tasks, time, integrations and the people involved come along, statuses and billing rates are copied, and you see what happens before you confirm. Or move it to another workspace you belong to.</p>
+          </div>
+          <figure class="shot"><img src="assets/promote.webp" width="1100" height="689" loading="lazy" alt="Promote “Mobile app” to a workspace: a name, who comes along (the people involved, everyone, or only me) and what moves with it."></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="integrations" class="section">
+      <div class="wrap">
+        <h2>Works where your work already is</h2>
+        <p class="section-lede">Connect a whole workspace or just one project.</p>
+        <ul class="pills" aria-label="Integrations">
+          <li><strong>GitHub</strong> Issues become tasks; closing either side closes the other; comments sync both ways.</li>
+          <li><strong>Calendars</strong> Google, Outlook / Microsoft 365, CalDAV and iCal links, several accounts; your tasks back as an iCal feed.</li>
+          <li><strong>Email in</strong> Forward to <code>team@in.flowly.net</code>-style aliases: a task, or AI turns a long email into its action items.</li>
+          <li><strong>Slack</strong> Updates in a channel, or the full Slack app with @Flowly and <code>/flowly</code>.</li>
+          <li><strong>Discord</strong> New, assigned and finished tasks in a channel, for a workspace or a single project.</li>
+          <li><strong>Telegram</strong> Your personal concierge, and the team bot in your group.</li>
+          <li><strong>Webhooks</strong> Signed outgoing events and an incoming URL that creates or updates tasks.</li>
+          <li><strong>Google Drive &amp; OneDrive</strong> Attach documents straight from your drives.</li>
+          <li><strong>Wikis</strong> A GitHub wiki, a docs folder or a MediaWiki as team knowledge for Flo.</li>
+          <li><strong>Donetick</strong> Two-way sync with your self-hosted chores app, by workspace, project or label.</li>
+          <li><strong>Trello &amp; Asana</strong> Import boards and projects with lists, checklists and comments.</li>
+          <li><strong>Your own AI</strong> (Enterprise) An OpenRouter key or an on-premises OpenAI-compatible model, with data kept exclusive to it.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="time" class="section alt">
+      <div class="wrap two-col reverse">
+        <figure class="shot"><img src="assets/time.webp" width="1400" height="836" loading="lazy" alt="The Time page: tracked and billable hours per project for the week, with amounts in euros."></figure>
+        <div>
+          <h2>Track time, invoice it, get paid</h2>
+          <ul class="checks">
+            <li>A ▶ on every card, in the phone app and in your desktop tray. Or log it afterwards: <code>1:30</code>, <code>45m</code>, <code>2h</code>.</li>
+            <li>Billing is off until you switch it on per workspace. Each project uses your rate, its own rate, or opts out.</li>
+            <li>Invoices from unbilled time, with rounding and tax. Print to PDF, export CSV, or download the <strong>e-invoice</strong>: FatturaPA for Italy, XRechnung for Germany, Factur-X for France, checked against the official validators.</li>
+            <li><strong>Pay online:</strong> connect your Stripe account and every invoice gets a card-payment link; it's marked paid when your client pays.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="open-source" class="section">
+      <div class="wrap">
+        <h2>Open source. Host it yourself, or let us.</h2>
+        <p class="section-lede">Every line of Flowly is public under the AGPL-3.0: the server, the web app, the phone and desktop apps,
+          and even the prompt that describes how to build it. Run it on your own server with every feature included, or use
+          flowly.net and let us run it.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5 M9 8V2 M15 8V2 M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg></div>
+            <h3>Self-host in five minutes</h3>
+            <p>Docker images for the API and the web app, Postgres, one <code>.env</code>. Every feature is unlocked: no plans,
+              no limits, no phoning home.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M12 18h.01"/></svg></div>
+            <h3>Apps for any server</h3>
+            <p>The Android and desktop apps connect to flowly.net, to your company's server, or to several at once, each with
+              its own sign-in. Switch from the menu.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z M19 3v4 M17 5h4 M5 17v4 M3 19h4"/></svg></div>
+            <h3>Your AI, your choice</h3>
+            <p>Flo works with an OpenRouter key or any OpenAI-compatible endpoint, including a model on your own hardware.
+              Or leave AI off: the planner works fine without it.</p>
+          </article>
+        </div>
+        <div class="two-col oss">
+          <div>
+            <h3 class="sub">Run it</h3>
+            <pre class="terminal"><code>curl -O https://raw.githubusercontent.com/flowly-org/flowly-backend/main/selfhost/docker-compose.yml
+curl -o .env https://raw.githubusercontent.com/flowly-org/flowly-backend/main/selfhost/.env.example
+# set DJANGO_SECRET_KEY, POSTGRES_PASSWORD and PUBLIC_URL
+docker compose up -d</code></pre>
+            <p class="small muted">Then open <code>http://localhost:8080</code>. The <a href="https://github.com/flowly-org/flowly-backend#self-hosting">self-hosting guide</a> covers HTTPS, admin settings, calendars, Telegram and SSO.</p>
+          </div>
+          <div>
+            <h3 class="sub">The code</h3>
+            <ul class="repos">
+              <li><a href="https://github.com/flowly-org/flowly-backend"><strong>flowly-backend</strong></a> API, worker and self-hosting files (Django)</li>
+              <li><a href="https://github.com/flowly-org/flowly-frontend"><strong>flowly-frontend</strong></a> Web app, Android and iOS (Angular, Capacitor)</li>
+              <li><a href="https://github.com/flowly-org/flowly-desktop"><strong>flowly-desktop</strong></a> Tray time tracker for macOS, Windows, Linux (Tauri)</li>
+              <li><a href="https://github.com/flowly-org/flowly-prompt"><strong>flowly-prompt</strong></a> PROMPT.md: the specification that rebuilds Flowly with a coding agent</li>
+            </ul>
+            <p class="small muted">Issues and pull requests welcome. Licensed under the GNU AGPL-3.0.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="wrap">
+        <h2>Hosted on flowly.net</h2>
+        <p class="section-lede">Don't want to run a server? Use ours. Start free, upgrade when the AI and the invoices start paying
+          for themselves. Self-hosting stays free, with everything included.</p>
+        <div class="plans">
+          <article class="plan">
+            <h3>Free</h3>
+            <p class="price">€0</p>
+            <ul class="checks">
+              <li>Unlimited workspaces, projects and tasks</li>
+              <li>My day, swimlanes, phone and desktop apps</li>
+              <li>Recurring tasks, checklists, reminders, templates, search</li>
+              <li>Time blocking, timeline, insights, weekly numbers</li>
+              <li>Sprints, standups and retros for teams</li>
+              <li>Time tracking and reports</li>
+              <li>GitHub, calendars, email in, wikis, Donetick, imports, webhooks</li>
+              <li>Claude, ChatGPT and MCP connectors</li>
+            </ul>
+            <a class="btn ghost" href="https://app.flowly.net/register">Start for free</a>
+          </article>
+          <article class="plan featured">
+            <h3>Pro</h3>
+            <p class="price">€6<span>/month</span></p>
+            <p class="muted small">or €60/year (two months free), plus VAT where it applies</p>
+            <ul class="checks">
+              <li>Everything in Free</li>
+              <li>Personal concierge on Telegram and in the app</li>
+              <li>Morning brief and weekly review written by Flo</li>
+              <li>Photos, voice messages, meeting notes and emails turned into tasks</li>
+              <li>Invoices, e-invoices (IT, DE, FR) and pay links</li>
+            </ul>
+            <a class="btn primary" href="https://app.flowly.net/register">Try Flowly, upgrade in Settings</a>
+          </article>
+          <article class="plan">
+            <h3>Pro Plus</h3>
+            <p class="price">€10<span>/month</span></p>
+            <p class="muted small">or €100/year, plus VAT where it applies</p>
+            <ul class="checks">
+              <li>Everything in Pro</li>
+              <li>Delegate tasks to Flo: 60 a month</li>
+              <li>Research with sources, drafts, plans and subtasks</li>
+              <li>Results on the task, a ping on Telegram</li>
+              <li>Flo suggests what it can take on each morning</li>
+            </ul>
+            <a class="btn ghost" href="https://app.flowly.net/register">Try Flowly, upgrade in Settings</a>
+          </article>
+          <article class="plan">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <p class="muted small">per workspace, invoiced yearly or monthly</p>
+            <ul class="checks">
+              <li>Everything in Pro</li>
+              <li>Flowly in your Telegram groups</li>
+              <li>The Flowly Slack app</li>
+              <li>Your own AI: OpenRouter key or on-premises model</li>
+              <li>Invoice billing and onboarding with us</li>
+            </ul>
+            <a class="btn ghost" href="https://app.flowly.net/register">Start free, then ask us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps" class="section alt">
+      <div class="wrap">
+        <h2>Get the apps</h2>
+        <p class="section-lede">The web app works everywhere. These add a timer in your tray and your day on your phone, on flowly.net or your own server.</p>
+        <div class="downloads">
+          <a class="dl" href="https://github.com/flowly-org/flowly-releases/releases/latest/download/Flowly-Android.apk"><strong>Android</strong><span>APK</span></a>
+          <a class="dl" href="https://github.com/flowly-org/flowly-releases/releases/latest/download/Flowly-macOS-universal.dmg"><strong>macOS</strong><span>Apple silicon &amp; Intel</span></a>
+          <a class="dl" href="https://github.com/flowly-org/flowly-releases/releases/latest/download/Flowly-Windows-x64-setup.exe"><strong>Windows</strong><span>10 &amp; 11</span></a>
+          <a class="dl" href="https://github.com/flowly-org/flowly-releases/releases/latest/download/Flowly-Linux-x86_64.AppImage"><strong>Linux</strong><span>AppImage (.deb and .rpm below)</span></a>
+          <a class="dl soon" href="https://app.flowly.net"><strong>iPhone</strong><span>Add to Home Screen · App Store soon</span></a>
+        </div>
+        <p class="small muted center">All downloads (including .deb, .rpm and checksums) and first-run tips: <a href="https://app.flowly.net/apps">app.flowly.net/apps</a> · <a href="https://github.com/flowly-org/flowly-releases/releases/latest">latest release</a></p>
+      </div>
+    </section>
+
+    <section class="section final">
+      <div class="wrap">
+        <h2>Plan tomorrow in two minutes.</h2>
+        <p class="section-lede">Create an account, add your projects, and drag today into shape.</p>
+        <a class="btn primary big" href="https://app.flowly.net/register">Start for free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand small"><img src="assets/logo.svg" alt="" width="20" height="20"> Flowly</span>
+      <nav aria-label="Footer">
+        <a href="https://app.flowly.net/login">Sign in</a>
+        <a href="https://app.flowly.net/register">Create account</a>
+        <a href="https://app.flowly.net/apps">Apps</a>
+        <a href="https://github.com/flowly-org">GitHub</a>
+        <a href="https://github.com/flowly-org/flowly-prompt">The prompt</a>
+      </nav>
+      <span class="muted">Open source · AGPL-3.0</span>
+    </div>
+  </footer>
+</body>
+</html>
