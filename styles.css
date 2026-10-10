@@ -90,13 +90,14 @@ code {
 
 .nav nav {
   display: flex;
-  gap: 22px;
-  margin-left: 12px;
+  gap: 24px;
+  margin-left: 16px;
 
   a {
     color: var(--muted);
     text-decoration: none;
     font-size: 0.95rem;
+    white-space: nowrap;
 
     &:hover { color: var(--ink); }
   }
@@ -112,7 +113,17 @@ code {
     color: var(--ink);
     text-decoration: none;
     font-size: 0.95rem;
+    white-space: nowrap;
   }
+
+  .icon-link {
+    display: inline-flex;
+    color: var(--muted);
+
+    &:hover { color: var(--ink); }
+  }
+
+  .btn { white-space: nowrap; }
 }
 
 .btn {
@@ -469,8 +480,12 @@ h1 {
   .plans { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 900px) {
+/* Section links need room; below this the logo and the account buttons are enough (the page is one scroll). */
+@media (max-width: 960px) {
   .nav nav { display: none; }
+}
+
+@media (max-width: 900px) {
 
   .two-col,
   .two-col.reverse { grid-template-columns: 1fr; gap: 32px; }
@@ -533,3 +548,5 @@ h3.sub {
 .repos { list-style: none; margin: 0 0 10px; padding: 0; display: grid; gap: 8px; }
 .repos li { line-height: 1.5; }
 .repos a { margin-right: 6px; }
+
+.oss > div { min-width: 0; }
